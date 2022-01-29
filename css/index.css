@@ -1,1 +1,170 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body {
+  text-decoration: none;
+  margin: 0px;
+}
+
+body a {
+  text-decoration: none;
+  font-family: "Roboto",sans-serif;
+}
+
+body a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+body p {
+  font-family: "Roboto",sans-serif;
+}
+
+body h1, body h2 {
+  font-family: "Shrikhand","Roboto",sans-serif;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 30px 0px 20px 0px;
+  -webkit-box-shadow: 1px 0px 8px grey;
+          box-shadow: 1px 0px 8px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo__img {
+  height: 40px;
+}
+
+.accueil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f2f2f2;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+}
+
+.accueil__title {
+  font-size: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  font-family: "Roboto",sans-serif;
+  text-align: center;
+}
+
+.accueil__text {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: grey;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 20px 0px 30px 110px;
+}
+
+.location__icone {
+  height: 20px;
+}
+
+.location__search {
+  width: 400px;
+  padding-left: 20px;
+  padding-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+
+.location__search::-webkit-input-placeholder {
+  color: black;
+}
+
+.location__search:-ms-input-placeholder {
+  color: black;
+}
+
+.location__search::-ms-input-placeholder {
+  color: black;
+}
+
+.location__search::placeholder {
+  color: black;
+}
+
+.button-purple {
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 33px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 25px 25px 25px 25px;
+  text-decoration: none;
+  -webkit-box-shadow: 1px 1px 10px grey;
+          box-shadow: 1px 1px 10px grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-purple--command {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.button-purple:visited {
+  color: white;
+}
+
+.button-purple:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-box-shadow: 2px 2px 15px grey;
+          box-shadow: 2px 2px 15px grey;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+/*# sourceMappingURL=index.css.map */

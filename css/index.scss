@@ -1,0 +1,132 @@
+// variables
+$colorPrimary:#9356DC;
+$colorSecondary :#FF79DA ;
+$colorTertiary:#99E2D0;
+$colorBackGround:#f2f2f2;
+$paddingAccueil: 7px 130px 7px 130px;
+$paddingButton:25px 25px 25px 25px;
+$fontSize:(text:20px,subtitle:25px,title:30px,id:23px,info:20px,button:18px,);
+$marginBottomSection: 50px;
+
+
+
+// Style générale
+body{
+    text-decoration: none;
+    margin:0px;
+
+    a{
+        text-decoration: none;
+        font-family: "Roboto",sans-serif;
+    }
+    a:visited{
+        text-decoration: none;
+        color:black
+    }
+    p{
+        font-family: "Roboto",sans-serif;
+    }
+    h1,h2{
+        font-family: "Shrikhand","Roboto",sans-serif;
+    }
+
+}
+
+// -----------------------Header accueil................//
+.logo{
+    margin-top:0px;
+    margin-bottom: 10px;
+    padding:30px 0px 20px 0px;
+    box-shadow:1px 0px 8px grey;
+    display: flex;
+    justify-content: center;
+    &__img{
+        height:40px;
+    }
+}
+.accueil{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items :center;
+flex: 1;
+background-color: $colorBackGround;
+padding-bottom:60px;
+margin-bottom:$marginBottomSection;
+&__title{
+    font-size: map-get($map: $fontSize, $key:title );
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom:10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+}
+&__text{
+    font-size: map-get($map: $fontSize, $key:text );
+    margin-left: 40px;
+    margin-right: 40px;
+    color:grey;
+    text-align: center;
+    margin-top:0px;
+}
+}
+
+.location{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    background-color:white;
+    padding:20px 0px 30px 110px;
+    &__icone{
+        height:20px;
+    }
+    &__search{
+        width: 400px;
+        padding-left:20px;
+        padding-top:6px;
+        font-size:20px;
+        font-weight:bold ;
+        border:none;
+        background-color:white;
+        &::placeholder{
+            color:black;
+        }
+    }
+
+    
+  
+}
+
+.button-purple{
+    font-size: map-get($map: $fontSize, $key:button );
+    color:white;
+    border:none;
+    border-radius:33px;
+    background:linear-gradient($colorSecondary,$colorPrimary);
+    padding:$paddingButton;
+    text-decoration: none;
+    box-shadow: 1px 1px 10px grey;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right: auto;
+    &--command{
+        display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:auto;
+      margin-top: 50px;
+      margin-bottom: 70px;;
+    }
+    &:visited{
+        color:white;
+    }
+    &:hover{
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow:2px 2px 15px grey;
+        transition: box-shadow 0.3s ease-in-out;
+
+    }
+}
+
