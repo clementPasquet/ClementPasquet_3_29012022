@@ -23,10 +23,10 @@ body{
         text-decoration: none;
         color:black
     }
-    p{
+    p,h2{
         font-family: "Roboto",sans-serif;
     }
-    h1,h2{
+    h1{
         font-family: "Shrikhand","Roboto",sans-serif;
     }
 
@@ -130,3 +130,122 @@ margin-bottom:$marginBottomSection;
     }
 }
 
+// -----------------------------------------------------main----------------------------------
+.fonction--titre{
+   margin-left: 15px;
+   font-size: map-get($map: $fontSize, $key:title );
+}
+.fonction{
+    padding:0px;
+    
+    &__card{
+        display:flex;
+        justify-content:stretch;
+        list-style-type: none;
+        background-color: $colorBackGround;
+        padding:20px 30px 20px 30px;
+        margin-bottom:20px;
+        border-radius: 35px;
+        border-bottom :1px solid lightgrey;
+        border-bottom-width:80%;
+        &:hover{
+         background-color: lighten($color: $colorPrimary, $amount: 35%);
+         color:lighten($color: $colorPrimary, $amount: 10%);
+     }
+        &:hover > &__icone{
+         color:$colorPrimary;
+     }
+     &--numero {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 25px;
+         height: 25px;
+         border-radius: 50%;
+         background-color: #9256dc;
+         color: #fff;
+         font-size: 17px;
+         font-weight: bold;
+         margin-right: 20px;
+       }
+       &--icone{
+           color:grey;
+           font-size: 25px;
+            margin-right:15px;
+           
+          
+       }
+       &--text{
+           font-size:map-get($map: $fontSize, $key:text );
+           font-weight: bold;
+           
+           
+       }
+    }
+    
+    
+         
+        
+           
+   
+ }
+ 
+ .padding-left{
+     padding-left: 50px;
+ }
+ .restaurant{
+     background-color: $colorBackGround;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 60px;
+     &__title:nth-child(1){
+         align-self:baseline;
+         padding-left:10px;
+     }
+ }
+ 
+ 
+ 
+ 
+ .card{
+     background-color: white;
+     border-radius:33px;
+     margin :15px;
+     text-decoration: none;
+     box-shadow: 0px 2px 20px black;
+    
+     &__img{
+         height :300px;
+         width: 600px;
+         border-top-left-radius: 33px;
+         border-top-right-radius: 33px;
+     }
+     &__text{
+         display:flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 5px;
+         color:black;
+     }
+     &__icone{
+         height:20px;
+         padding-right: 15px;
+         &:hover{
+             color:$colorSecondary;
+               transition:color 0.5s ease-out;
+           } 
+     }
+     
+     &:visited{
+         color:black; 
+ }
+ &:hover{
+     transform:scale(1.1);
+     transition: transform 0.3s ease-in ;
+     
+ }
+     
+ }  
+ 
