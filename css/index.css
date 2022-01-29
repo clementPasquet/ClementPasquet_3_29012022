@@ -1,6 +1,7 @@
 body {
   text-decoration: none;
   margin: 0px;
+  width: 100%;
 }
 
 body a {
@@ -337,5 +338,39 @@ body h1 {
   transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  bottom: 0px;
+  background-color: #262626;
+}
+
+.footer__logo {
+  padding: 15px;
+  height: 25px;
+}
+
+.footer__lien {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 20PX;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.footer__lien:visited {
+  color: white;
+}
+
+.footer__icone {
+  padding-right: 20px;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */
