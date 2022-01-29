@@ -252,6 +252,10 @@ body h1 {
   padding-bottom: 60px;
 }
 
+.restaurant__title {
+  font-size: 30px;
+}
+
 .restaurant__title:nth-child(1) {
   -ms-flex-item-align: baseline;
       align-self: baseline;
@@ -263,18 +267,29 @@ body h1 {
   border-radius: 33px;
   margin: 15px;
   text-decoration: none;
-  -webkit-box-shadow: 0px 2px 20px black;
-          box-shadow: 0px 2px 20px black;
+  -webkit-box-shadow: 0px 2px 0px lightgray;
+          box-shadow: 0px 2px 0px lightgray;
+  position: relative;
+}
+
+.card__new {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: green;
+  background-color: #a4f3a4;
+  padding: 6px;
+  font-weight: 600;
 }
 
 .card__img {
-  height: 300px;
-  width: 600px;
+  height: 175px;
+  width: 350px;
   border-top-left-radius: 33px;
   border-top-right-radius: 33px;
 }
 
-.card__text {
+.card__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,6 +305,14 @@ body h1 {
           align-items: center;
   padding: 5px;
   color: black;
+}
+
+.card__info--text {
+  margin: 5px 0px 5px 5px;
+}
+
+.card__info--nom {
+  margin: 5px 0px 5px 5px;
 }
 
 .card__icone {

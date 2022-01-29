@@ -199,6 +199,9 @@ margin-bottom:$marginBottomSection;
      flex-direction: column;
      align-items: center;
      padding-bottom: 60px;
+     &__title{
+         font-size: map-get($map: $fontSize, $key:title);
+     }
      &__title:nth-child(1){
          align-self:baseline;
          padding-left:10px;
@@ -213,21 +216,39 @@ margin-bottom:$marginBottomSection;
      border-radius:33px;
      margin :15px;
      text-decoration: none;
-     box-shadow: 0px 2px 20px black;
+     box-shadow: 0px 2px 0px lightgray;
+     position:relative;
+     &__new{
+         position:absolute;
+         top:10px;
+         right:20px;
+         color:green;
+         background-color:rgb(164, 243, 164);
+         padding:6px;
+         font-weight: 600;
+     }
     
      &__img{
-         height :300px;
-         width: 600px;
+         height :175px;
+         width: 350px;
          border-top-left-radius: 33px;
          border-top-right-radius: 33px;
      }
-     &__text{
+     &__info{
          display:flex;
          flex-direction: row;
          justify-content: space-between;
          align-items: center;
          padding: 5px;
          color:black;
+         
+         &--text{
+            margin:5px 0px 5px 5px;
+         }
+         &--nom{
+            margin :5px 0px 5px 5px;
+         }
+         
      }
      &__icone{
          height:20px;
