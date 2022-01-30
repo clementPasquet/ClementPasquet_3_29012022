@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   text-decoration: none;
   margin: 0px;
@@ -14,7 +15,7 @@ body a:visited {
   color: black;
 }
 
-body p, body h2 {
+body p, body h2, body li {
   font-family: "Roboto",sans-serif;
 }
 
@@ -613,8 +614,44 @@ body {
   height: 30px;
 }
 
-.backgroundimg {
+.backgroundimg-alafrancaise {
   background-image: url("../images/restaurants/aLaFrancaise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  -webkit-animation: apparition-picture 1s ease-in-out;
+          animation: apparition-picture 1s ease-in-out;
+  z-index: 0;
+}
+
+.backgroundimg-lapalettedugout {
+  background-image: url("../images/restaurants/laPaletteDuGout.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  -webkit-animation: apparition-picture 1s ease-in-out;
+          animation: apparition-picture 1s ease-in-out;
+  z-index: 0;
+}
+
+.backgroundimg-ledelicedessens {
+  background-image: url("../images/restaurants/leDéliceDesSens.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  -webkit-animation: apparition-picture 1s ease-in-out;
+          animation: apparition-picture 1s ease-in-out;
+  z-index: 0;
+}
+
+.backgroundimg-lanoteenchantee {
+  background-image: url("../images/restaurants/laNoteEnchantée.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
