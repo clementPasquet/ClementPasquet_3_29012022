@@ -22,6 +22,257 @@ body h1 {
   font-family: "Shrikhand","Roboto",sans-serif;
 }
 
+body {
+  font-family: "Shrikhand", sans-serif;
+  height: 100vh;
+}
+
+/* loader */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lettre {
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  -webkit-animation: flash 1.2s linear infinite;
+          animation: flash 1.2s linear infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+}
+
+.lettre:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.fondu-out {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(1200px);
+    -webkit-transform: translateY(1200px);
+    -moz-transform: translateY(1200px);
+    -ms-transform: translateY(1200px);
+    -o-transform: translateY(1200px);
+  }
+  100% {
+    opacity: 0.6;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(1200px);
+    -webkit-transform: translateY(1200px);
+    -moz-transform: translateY(1200px);
+    -ms-transform: translateY(1200px);
+    -o-transform: translateY(1200px);
+  }
+  100% {
+    opacity: 0.6;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes apparition-picture {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition-picture {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes apparition-card {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition-card {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes apparition-validate {
+  0% {
+    width: 5px;
+  }
+  17% {
+    width: 20px;
+  }
+  33% {
+    width: 40px;
+  }
+  66% {
+    width: 60px;
+  }
+  100% {
+    width: 75px;
+  }
+}
+
+@keyframes apparition-validate {
+  0% {
+    width: 5px;
+  }
+  17% {
+    width: 20px;
+  }
+  33% {
+    width: 40px;
+  }
+  66% {
+    width: 60px;
+  }
+  100% {
+    width: 75px;
+  }
+}
+
+@-webkit-keyframes apparition-check {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes apparition-check {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 .logo {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -220,13 +471,13 @@ body h1 {
   color: #fff;
   font-size: 17px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .fonction__card--icone {
   color: grey;
   font-size: 25px;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .fonction__card--text {
@@ -340,10 +591,195 @@ body h1 {
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
-.footer {
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head__logo {
+  height: 30px;
+  padding-left: 20px;
+}
+
+.head__icone {
+  height: 30px;
+}
+
+.backgroundimg {
+  background-image: url("../images/restaurants/aLaFrancaise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  -webkit-animation: apparition-picture 1s ease-in-out;
+          animation: apparition-picture 1s ease-in-out;
+  z-index: 0;
+}
+
+.Menu {
+  background-color: #f2f2f2;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  width: 97%;
+  padding: 50px 20px 50px 5px;
+  -webkit-animation: apparition 1.0s ease-in-out;
+          animation: apparition 1.0s ease-in-out;
   position: relative;
+  top: 180px;
   z-index: 1;
-  bottom: 0px;
+}
+
+.Menu__h2 {
+  padding-top: 30px;
+  margin: 10px;
+  color: grey;
+  font-size: 20px;
+}
+
+.id-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.id-restaurant__name {
+  font-size: 30px;
+  padding-left: 25px;
+}
+
+.id-restaurant__heart-empty {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.id-restaurant__heart-empty:hover {
+  color: #FF79DA;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.selection {
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 25px;
+  -webkit-animation: apparition-card 1.1s ease-in-out 1.0s;
+          animation: apparition-card 1.1s ease-in-out 1.0s;
+}
+
+.selection:hover > .selection__validate {
+  display: block;
+  -webkit-animation: apparition-validate 0.2s ease-in both;
+          animation: apparition-validate 0.2s ease-in both;
+}
+
+.selection:hover > .selection__check {
+  display: block;
+  -webkit-animation: apparition-check 0.3s ease-in;
+          animation: apparition-check 0.3s ease-in;
+}
+
+.selection:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.selection__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.selection__id {
+  font-weight: bold;
+  font-size: 23px;
+  padding: 5px 0px 5px 10px;
+  margin: 0px;
+  color: black;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 450px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.selection__info {
+  color: grey;
+  font-size: 17px;
+  padding: 5px 0px 5px 10px;
+  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.selection__price {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 20px;
+  color: black;
+}
+
+.selection__validate {
+  background-color: lightgreen;
+  height: 68px;
+  position: absolute;
+  right: 16px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 0;
+  margin-left: 15px;
+}
+
+.selection__check {
+  right: 20px;
+  bottom: 16px;
+  color: white;
+  font-size: 30px;
+  z-index: 1;
+  position: relative;
+  display: none;
+}
+
+.green-line {
+  height: 5px;
+  width: 80px;
+  background-color: #99E2D0;
+  margin: 5px 0px 50px 10px;
+}
+
+.footer--restaurant {
+  position: relative;
+  top: 150px;
+  z-index: 1;
+}
+
+.footer {
   background-color: #262626;
 }
 
