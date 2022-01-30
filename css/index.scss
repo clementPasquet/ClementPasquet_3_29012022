@@ -471,7 +471,7 @@ margin-bottom:$marginBottomSection;
     padding: 50px 20px 50px 5px;
     animation: apparition 1.0s ease-in-out ;
     position:relative;
-    top:180px;
+    top:220px;
     z-index:1;
     &__h2{
         padding-top:30px;
@@ -518,6 +518,7 @@ margin-bottom:$marginBottomSection;
       animation: apparition-check 0.3s ease-in  ;
 
     }
+ 
   
     
   
@@ -527,11 +528,10 @@ margin-bottom:$marginBottomSection;
     }  
    
     &__text{
+        overflow:hidden;
         text-overflow:ellipsis; 
         white-space: nowrap;
         float:left;
-        
-        
     }
 
     &__id{
@@ -541,8 +541,6 @@ margin-bottom:$marginBottomSection;
         margin:0px;
         color:black;
         text-overflow:ellipsis; 
-        display:inline-block;
-        max-width:450px;
         white-space: nowrap;
         overflow:hidden;
        
@@ -565,16 +563,18 @@ margin-bottom:$marginBottomSection;
         padding-left:15px ;
         padding-right: 20px;
         color:black;
-    }
+        display:inline-block;
+    
+}
     &__validate{
-         background-color: lightgreen;
+         background-color: $colorTertiary;
          height:68px;
          position:absolute;
          right:16px;
          border-bottom-right-radius: 10px;
          border-top-right-radius: 10px;
          z-index: 0;
-         margin-left:15px;
+         margin-left:50px;
     }
     &__check{
         right:20px;
@@ -584,6 +584,7 @@ margin-bottom:$marginBottomSection;
         z-index: 1;
         position:relative;
         display:none;
+        margin-left:50px;
     }
 }
 
@@ -599,7 +600,7 @@ margin-bottom:$marginBottomSection;
  // ------------------------------------Footer---------------------------------
  .footer--restaurant{
     position:relative;
-    top:150px;
+    top:200px;
     z-index: 1;
  }
 .footer{

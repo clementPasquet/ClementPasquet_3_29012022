@@ -634,7 +634,7 @@ body {
   -webkit-animation: apparition 1.0s ease-in-out;
           animation: apparition 1.0s ease-in-out;
   position: relative;
-  top: 180px;
+  top: 220px;
   z-index: 1;
 }
 
@@ -709,6 +709,7 @@ body {
 }
 
 .selection__text {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   float: left;
@@ -721,8 +722,6 @@ body {
   margin: 0px;
   color: black;
   text-overflow: ellipsis;
-  display: inline-block;
-  max-width: 450px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -743,17 +742,18 @@ body {
   padding-left: 15px;
   padding-right: 20px;
   color: black;
+  display: inline-block;
 }
 
 .selection__validate {
-  background-color: lightgreen;
+  background-color: #99E2D0;
   height: 68px;
   position: absolute;
   right: 16px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   z-index: 0;
-  margin-left: 15px;
+  margin-left: 50px;
 }
 
 .selection__check {
@@ -764,6 +764,7 @@ body {
   z-index: 1;
   position: relative;
   display: none;
+  margin-left: 50px;
 }
 
 .green-line {
@@ -775,7 +776,7 @@ body {
 
 .footer--restaurant {
   position: relative;
-  top: 150px;
+  top: 200px;
   z-index: 1;
 }
 
