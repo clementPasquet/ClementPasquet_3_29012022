@@ -423,18 +423,22 @@ body {
 
 .location__search::-webkit-input-placeholder {
   color: black;
+  padding-left: 20px;
 }
 
 .location__search:-ms-input-placeholder {
   color: black;
+  padding-left: 20px;
 }
 
 .location__search::-ms-input-placeholder {
   color: black;
+  padding-left: 20px;
 }
 
 .location__search::placeholder {
   color: black;
+  padding-left: 20px;
 }
 
 .button-purple {
@@ -508,10 +512,6 @@ body {
   color: #ae80e5;
 }
 
-.fonction__card:hover > .fonction__card__icone {
-  color: #9356DC;
-}
-
 .fonction__card--numero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,7 +569,7 @@ body {
 .restaurant__title:nth-child(1) {
   -ms-flex-item-align: baseline;
       align-self: baseline;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .card {
@@ -632,25 +632,29 @@ body {
   padding-right: 15px;
 }
 
-.card__heart--empty {
-  position: relative;
-}
-
-.card__heart--empty:hover {
+.card__heart:hover > .card__heart--empty {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in both;
-  transition: opacity 0.3s ease-in both;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .card__heart--full {
-  position: absolute;
-  display: none;
+  position: relative;
+  color: #9356DC;
+  height: 18px;
+  opacity: 0;
+  background-clip: border-box;
 }
 
 .card__heart--full:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.card__heart--empty {
+  position: absolute;
+  height: 18px;
 }
 
 .card:visited {
@@ -740,7 +744,7 @@ body {
   background-color: #f2f2f2;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
-  width: 97%;
+  width: 100%;
   padding: 50px 20px 50px 5px;
   -webkit-animation: apparition 1.0s ease-in-out;
           animation: apparition 1.0s ease-in-out;
@@ -773,15 +777,8 @@ body {
   padding-left: 25px;
 }
 
-.id-restaurant__heart-empty {
-  font-size: 20px;
-  padding-right: 20px;
-}
-
-.id-restaurant__heart-empty:hover {
-  color: #FF79DA;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+.heart-restaurant {
+  height: 22px;
 }
 
 .selection {
@@ -798,8 +795,9 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 25px;
-  -webkit-animation: apparition-card 1.1s ease-in-out 1.0s;
-          animation: apparition-card 1.1s ease-in-out 1.0s;
+  -webkit-animation: apparition-card 1s ease-in-out 0.5s;
+          animation: apparition-card 1s ease-in-out 0.5s;
+  position: relative;
 }
 
 .selection:hover > .selection__validate {
@@ -860,7 +858,7 @@ body {
   background-color: #99E2D0;
   height: 68px;
   position: absolute;
-  right: 16px;
+  right: 0px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   z-index: 0;
@@ -876,6 +874,16 @@ body {
   position: relative;
   display: none;
   margin-left: 50px;
+}
+
+.selection-apparition-plats {
+  -webkit-animation: apparition-card 2s ease-in-out 0.5s;
+          animation: apparition-card 2s ease-in-out 0.5s;
+}
+
+.selection-appparition-desserts {
+  -webkit-animation: apparition-card 3s ease-in-out 0.5s;
+          animation: apparition-card 3s ease-in-out 0.5s;
 }
 
 .green-line {
@@ -920,5 +928,57 @@ body {
 .footer__icone {
   padding-right: 20px;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurant {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurant__title {
+    padding-left: 20px;
+  }
+  .card {
+    margin: 45px;
+  }
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 20px 50px 20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

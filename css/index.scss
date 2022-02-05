@@ -5,6 +5,7 @@ $colorPrimary:#9356DC;
 $colorSecondary :#FF79DA ;
 $colorTertiary:#99E2D0;
 $colorBackGround:#f2f2f2;
+$colorDegrade:linear-gradient($colorSecondary,$colorPrimary);
 $paddingAccueil: 7px 130px 7px 130px;
 $paddingButton:25px 25px 25px 25px;
 $fontSize:(text:20px,subtitle:25px,title:30px,id:23px,info:17px,button:18px,);
@@ -227,6 +228,7 @@ body {
 
 
 // -----------------------Header accueil................//
+
 .logo{
     margin-top:0px;
     margin-bottom: 10px;
@@ -283,8 +285,10 @@ margin-bottom:$marginBottomSection;
         font-weight:bold ;
         border:none;
         background-color:white;
+        
         &::placeholder{
             color:black;
+            padding-left: 20px;
         }
     }
 
@@ -346,9 +350,6 @@ margin-bottom:$marginBottomSection;
          background-color: lighten($color: $colorPrimary, $amount: 35%);
          color:lighten($color: $colorPrimary, $amount: 10%);
      }
-        &:hover > &__icone{
-         color:$colorPrimary;
-     }
      &--numero {
          display: flex;
          justify-content: center;
@@ -398,7 +399,7 @@ margin-bottom:$marginBottomSection;
      }
      &__title:nth-child(1){
          align-self:baseline;
-         padding-left:10px;
+         padding-left:15px;
      }
  }
  
@@ -448,20 +449,29 @@ margin-bottom:$marginBottomSection;
      &__heart{
          height:20px;
          padding-right: 15px;
-         &--empty{
-             position:relative;
-           &:hover{
+         &:hover > &--empty{
+             opacity:0;
+             transition:opacity 0.7s ease-in-out ;
+         }
+        
+           &--full{
+               position:relative;
+               color:$colorPrimary;
+               height: 18px;
                opacity:0;
-               transition:opacity 0.3s ease-in both;
-           }  
-         }
-         &--full{
-             position:absolute;
-             display:none;
-           &:hover{
-               display:flex;
-           }    
-         }
+               background-clip:border-box;
+
+               &:hover{
+                   opacity:1;
+                   transition: opacity 1.5s ease-in-out; 
+                   
+               }
+              
+           }
+           &--empty{
+               position:absolute;
+               height:18px;
+           }
        
      }
      
@@ -538,7 +548,7 @@ margin-bottom:$marginBottomSection;
     background-color: $colorBackGround;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
-    width:97%;
+    width:100%;
     padding: 50px 20px 50px 5px;
     animation: apparition 1.0s ease-in-out ;
     position:relative;
@@ -560,14 +570,10 @@ margin-bottom:$marginBottomSection;
         font-size: map-get($map: $fontSize, $key:title );
         padding-left: 25px;
     }
-    &__heart-empty{
-        font-size: 20px;
-        padding-right: 20px;
-        &:hover{
-          color:$colorSecondary;
-            transition:color 0.5s ease-out;
-        }
-    }
+   
+}
+.heart-restaurant{
+    height:22px;
 }
 
 
@@ -579,7 +585,8 @@ margin-bottom:$marginBottomSection;
     justify-content: space-between;
     align-items:flex-end ;
     margin-bottom: 25px;
-    animation: apparition-card 1.1s ease-in-out 1.0s ;
+    animation: apparition-card 1s ease-in-out 0.5s ;
+    position: relative;
     &:hover > &__validate{
         display:block;
         animation: apparition-validate 0.2s ease-in both;
@@ -641,7 +648,7 @@ margin-bottom:$marginBottomSection;
          background-color: $colorTertiary;
          height:68px;
          position:absolute;
-         right:16px;
+         right:0px;
          border-bottom-right-radius: 10px;
          border-top-right-radius: 10px;
          z-index: 0;
@@ -657,6 +664,13 @@ margin-bottom:$marginBottomSection;
         display:none;
         margin-left:50px;
     }
+}
+
+.selection-apparition-plats{
+    animation:apparition-card 2s ease-in-out 0.5s ;
+}
+.selection-appparition-desserts{
+    animation:apparition-card 3s ease-in-out 0.5s ;
 }
 
 .green-line{
@@ -698,3 +712,34 @@ margin-bottom:$marginBottomSection;
     }
 }
 
+@media screen and (min-width:768px){
+.fonction{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.restaurant{
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    flex-wrap: wrap;
+}
+.restaurant__title{
+    padding-left:20px;
+}
+.card{
+    margin:45px;
+}
+.section{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer{
+    display:flex;
+    padding:50px 20px 50px 20px;
+}
+}
+    
