@@ -798,6 +798,7 @@ body {
   -webkit-animation: apparition-card 1s ease-in-out 0.5s;
           animation: apparition-card 1s ease-in-out 0.5s;
   position: relative;
+  max-width: 400px;
 }
 
 .selection:hover > .selection__validate {

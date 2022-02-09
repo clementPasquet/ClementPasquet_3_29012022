@@ -587,6 +587,7 @@ margin-bottom:$marginBottomSection;
     margin-bottom: 25px;
     animation: apparition-card 1s ease-in-out 0.5s ;
     position: relative;
+    max-width:400px;
     &:hover > &__validate{
         display:block;
         animation: apparition-validate 0.2s ease-in both;
