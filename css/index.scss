@@ -345,11 +345,14 @@ margin-bottom:$marginBottomSection;
         margin-bottom:20px;
         border-radius: 35px;
         border-bottom :1px solid lightgrey;
-        border-bottom-width:80%;
+        
         &:hover{
          background-color: lighten($color: $colorPrimary, $amount: 35%);
          color:lighten($color: $colorPrimary, $amount: 10%);
      }
+        &:hover > &--icone{
+            color:pink;
+        }
      &--numero {
          display: flex;
          justify-content: center;
@@ -396,6 +399,7 @@ margin-bottom:$marginBottomSection;
      padding-bottom: 60px;
      &__title{
          font-size: map-get($map: $fontSize, $key:title);
+         margin-left:20px;
      }
      &__title:nth-child(1){
          align-self:baseline;

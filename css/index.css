@@ -504,12 +504,15 @@ body {
   margin-bottom: 20px;
   border-radius: 35px;
   border-bottom: 1px solid lightgrey;
-  border-bottom-width: 80%;
 }
 
 .fonction__card:hover {
   background-color: #f2eafb;
   color: #ae80e5;
+}
+
+.fonction__card:hover > .fonction__card--icone {
+  color: pink;
 }
 
 .fonction__card--numero {
@@ -564,6 +567,7 @@ body {
 
 .restaurant__title {
   font-size: 30px;
+  margin-left: 20px;
 }
 
 .restaurant__title:nth-child(1) {
