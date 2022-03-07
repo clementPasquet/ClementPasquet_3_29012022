@@ -333,7 +333,7 @@ body {
 
 .logo {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding: 30px 0px 20px 0px;
   -webkit-box-shadow: 1px 0px 8px grey;
           box-shadow: 1px 0px 8px grey;
@@ -403,7 +403,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #e6e4e4;
   padding: 20px 0px 30px 110px;
 }
 
@@ -418,27 +418,27 @@ body {
   font-size: 20px;
   font-weight: bold;
   border: none;
-  background-color: white;
+  background-color: #e6e4e4;
 }
 
 .location__search::-webkit-input-placeholder {
-  color: black;
-  padding-left: 20px;
+  color: grey;
+  padding-left: 0px;
 }
 
 .location__search:-ms-input-placeholder {
-  color: black;
-  padding-left: 20px;
+  color: grey;
+  padding-left: 0px;
 }
 
 .location__search::-ms-input-placeholder {
-  color: black;
-  padding-left: 20px;
+  color: grey;
+  padding-left: 0px;
 }
 
 .location__search::placeholder {
-  color: black;
-  padding-left: 20px;
+  color: grey;
+  padding-left: 0px;
 }
 
 .button-purple {
@@ -504,6 +504,9 @@ body {
   margin-bottom: 20px;
   border-radius: 35px;
   border-bottom: 1px solid lightgrey;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fonction__card:hover {
@@ -542,7 +545,7 @@ body {
 }
 
 .fonction__card--text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -694,6 +697,7 @@ body {
 
 .head__icone {
   height: 30px;
+  color: black;
 }
 
 .backgroundimg-alafrancaise {
@@ -749,7 +753,7 @@ body {
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   width: 100%;
-  padding: 50px 20px 50px 5px;
+  padding: 50px 0px 50px 0px;
   -webkit-animation: apparition 1.0s ease-in-out;
           animation: apparition 1.0s ease-in-out;
   position: relative;
@@ -802,7 +806,9 @@ body {
   -webkit-animation: apparition-card 1s ease-in-out 0.5s;
           animation: apparition-card 1s ease-in-out 0.5s;
   position: relative;
-  max-width: 400px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .selection:hover > .selection__validate {
@@ -985,5 +991,23 @@ body {
     display: flex;
     padding: 50px 20px 50px 20px;
   }
+}
+
+@media screen and (max-width: 468px) {
+  .fonction__card {
+    width: 320px;
+  }
+}
+
+.selection__id {
+  font-size: 20px;
+}
+
+.selection__info {
+  font-size: 15px;
+}
+
+.selection__validate {
+  height: 64.5px;
 }
 /*# sourceMappingURL=index.css.map */

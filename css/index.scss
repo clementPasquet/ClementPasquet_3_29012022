@@ -231,7 +231,7 @@ body {
 
 .logo{
     margin-top:0px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     padding:30px 0px 20px 0px;
     box-shadow:1px 0px 8px grey;
     display: flex;
@@ -272,7 +272,7 @@ margin-bottom:$marginBottomSection;
     flex-direction:row;
     justify-content:center;
     align-items: center;
-    background-color:white;
+    background-color:rgb(230, 228, 228);
     padding:20px 0px 30px 110px;
     &__icone{
         height:20px;
@@ -284,11 +284,11 @@ margin-bottom:$marginBottomSection;
         font-size:20px;
         font-weight:bold ;
         border:none;
-        background-color:white;
+        background-color:rgb(230, 228, 228);
         
         &::placeholder{
-            color:black;
-            padding-left: 20px;
+            color:grey;
+            padding-left: 0px;
         }
     }
 
@@ -345,7 +345,9 @@ margin-bottom:$marginBottomSection;
         margin-bottom:20px;
         border-radius: 35px;
         border-bottom :1px solid lightgrey;
-        
+        width:400px;
+        margin-left: auto;
+        margin-right: auto;
         &:hover{
          background-color: lighten($color: $colorPrimary, $amount: 35%);
          color:lighten($color: $colorPrimary, $amount: 10%);
@@ -374,7 +376,7 @@ margin-bottom:$marginBottomSection;
           
        }
        &--text{
-           font-size:map-get($map: $fontSize, $key:text );
+           font-size:18px;
            font-weight: bold;
            
            
@@ -503,6 +505,7 @@ margin-bottom:$marginBottomSection;
     }
     &__icone{
         height:30px;
+        color:black;
     }
 }
 .backgroundimg-alafrancaise{
@@ -553,7 +556,7 @@ margin-bottom:$marginBottomSection;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     width:100%;
-    padding: 50px 20px 50px 5px;
+    padding: 50px 0px 50px 0px;
     animation: apparition 1.0s ease-in-out ;
     position:relative;
     top:220px;
@@ -591,7 +594,9 @@ margin-bottom:$marginBottomSection;
     margin-bottom: 25px;
     animation: apparition-card 1s ease-in-out 0.5s ;
     position: relative;
-    max-width:400px;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
     &:hover > &__validate{
         display:block;
         animation: apparition-validate 0.2s ease-in both;
@@ -747,4 +752,20 @@ margin-bottom:$marginBottomSection;
     padding:50px 20px 50px 20px;
 }
 }
-    
+@media screen and (max-width:468px){
+    .fonction{
+        &__card{
+            width:320px;
+        }
+    }
+}  .selection{
+    &__id{
+font-size:20px;
+    }
+    &__info{
+        font-size:15px;
+    }
+    &__validate{
+        height:64.5px;
+    }
+}
