@@ -464,6 +464,7 @@ body {
   width: auto;
   margin-top: 50px;
   margin-bottom: 70px;
+  padding: 15px 35px 15px 35px;
 }
 
 .button-purple:visited {
@@ -688,16 +689,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .head__logo {
   height: 30px;
-  padding-left: 20px;
+  margin-right: 50px;
 }
 
 .head__icone {
   height: 30px;
   color: black;
+  margin-right: 50px;
 }
 
 .backgroundimg-alafrancaise {
@@ -750,10 +757,10 @@ body {
 
 .Menu {
   background-color: #f2f2f2;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   width: 100%;
-  padding: 50px 0px 50px 0px;
+  padding: 10px 0px 50px 0px;
   -webkit-animation: apparition 1.0s ease-in-out;
           animation: apparition 1.0s ease-in-out;
   position: relative;
@@ -766,6 +773,7 @@ body {
   margin: 10px;
   color: grey;
   font-size: 20px;
+  font-weight: normal;
 }
 
 .id-restaurant {
@@ -781,12 +789,15 @@ body {
 }
 
 .id-restaurant__name {
-  font-size: 30px;
-  padding-left: 25px;
+  font-size: 27px;
+  padding-left: 15px;
+  margin: 25px 20px 0px 0px;
 }
 
 .heart-restaurant {
   height: 22px;
+  padding-top: 13px;
+  padding-right: 15px;
 }
 
 .selection {
@@ -899,7 +910,7 @@ body {
 
 .green-line {
   height: 5px;
-  width: 80px;
+  width: 40px;
   background-color: #99E2D0;
   margin: 5px 0px 50px 10px;
 }

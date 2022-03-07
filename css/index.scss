@@ -314,7 +314,8 @@ margin-bottom:$marginBottomSection;
       margin-right:auto;
       width:auto;
       margin-top: 50px;
-      margin-bottom: 70px;;
+      margin-bottom: 70px;
+      padding:15px 35px 15px 35px;
     }
     &:visited{
         color:white;
@@ -499,13 +500,17 @@ margin-bottom:$marginBottomSection;
     display:flex;
     flex-direction:row;
     justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
     &__logo{
         height:30px;
-        padding-left:20px;    
+        margin-right:50px;   
     }
     &__icone{
         height:30px;
         color:black;
+        margin-right: 50px;
     }
 }
 .backgroundimg-alafrancaise{
@@ -553,10 +558,10 @@ margin-bottom:$marginBottomSection;
 
 .Menu{
     background-color: $colorBackGround;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
     width:100%;
-    padding: 50px 0px 50px 0px;
+    padding: 10px 0px 50px 0px;
     animation: apparition 1.0s ease-in-out ;
     position:relative;
     top:220px;
@@ -566,6 +571,7 @@ margin-bottom:$marginBottomSection;
         margin: 10px;
         color:grey;
         font-size:20px;
+        font-weight: normal;
     }
 }
 
@@ -574,13 +580,16 @@ margin-bottom:$marginBottomSection;
     align-items: center;
     justify-content: space-between;
     &__name{
-        font-size: map-get($map: $fontSize, $key:title );
-        padding-left: 25px;
+        font-size: 27px;
+       padding-left:15px;
+        margin:25px 20px 0px 0px;
     }
    
 }
 .heart-restaurant{
     height:22px;
+    padding-top:13px;
+    padding-right:15px;
 }
 
 
@@ -685,7 +694,7 @@ margin-bottom:$marginBottomSection;
 
 .green-line{
     height:5px;
-    width:80px;
+    width:40px;
     background-color: $colorTertiary;
     margin:5px 0px 50px 10px;
 }
